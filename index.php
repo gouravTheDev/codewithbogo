@@ -12,6 +12,10 @@
   gtag('config', 'UA-158701342-1');
 </script>
 
+<!-- ADSENCE CODE -->
+
+<script data-ad-client="ca-pub-8663526678038399" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
