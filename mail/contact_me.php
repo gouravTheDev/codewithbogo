@@ -1,6 +1,6 @@
 <?php
 
-include '/CONFIG/config.php';
+include '././CONFIG/config.php';
 // Check for empty fields
 if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
   http_response_code(500);
@@ -20,7 +20,9 @@ $stmt->bind_param("sssss", $name, $email, $phone, $message, $currdate);
 
 $result = $stmt->execute();
 if ($result) {
-	# code...
+	echo "<script>console.log('It done!')</script>";
+}else{
+	echo "<script>console.log('It not done!')</script>";
 }
 
 // Create the email and send the message
@@ -29,7 +31,7 @@ $subject = "Website Contact Form:  $name";
 $body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email\n\nPhone: $phone\n\nMessage:\n$message";
 $header = "From: noreply@codewithbogo.in\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $header .= "Reply-To: $email";	
-echo "asdadbg";
+// echo "asdadbg";
 
 if(!mail($to, $subject, $body, $header))
   http_response_code(500);
