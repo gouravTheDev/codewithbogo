@@ -1,14 +1,15 @@
 <?php 
 include 'header.php';
 ?>
-  <header class="masthead" style="background-image: url('img/about-bg.jpg')">
+  <header class="masthead" style="background-image: url('img/abou.png')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>About Me</h1>
-            <span class="subheading">This is what I do.</span>
+            <h2>I am Gourav Chatterjee</h2>
+           <span class="typer" id="main" data-words="I am a Software Developer, I build web and android apps, I am a freelancer, I help people to write code" data-delay="100" data-colors="white"></span>
+            <span class="cursor" data-owner="main"></span>
           </div>
         </div>
       </div>
@@ -18,60 +19,24 @@ include 'header.php';
   <!-- Main Content -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
+      <div class="col-lg-8 col-md-10 mx-auto text-justify">
+        <div class="text-center">
+          <img src="img/myImg.jpg" height="200" width="200" style="border-radius: 50%">
+        </div>
+        <p>Hi, My name is Gourav Chatterjee, I am an I.T Student and will complete my Bachelor of Technology (B.Tech) in June 2020. I am a Software Developer with experience of almost 2 years. Now I am working in a startup company as a full-stack software developer and working part time as a freelancer. Besides I teach students java and some other programming languages.</p>
+        <p>This website is to reach more people and to share my thoughts and new things I come up with. I want to make some little contribution to the huge resource out there to help developers and programmers. Reach me out and share your thoughts with me.</p>
+        <p>If you have a project idea you want to share with me then please <a href="contact">contact me!</a></p>
+
+        <div class="text-center">
+          <p><strong>System.out.println(" BE HAPPY! KEEP HAPPY! ");</strong></p>
+        </div>
       </div>
     </div>
   </div>
 
-  <hr>
+ <?php include 'footer.php'; ?>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <ul class="list-inline text-center">
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/clean-blog.min.js"></script>
-
-</body>
-
-</html>
+ 
