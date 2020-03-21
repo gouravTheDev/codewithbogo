@@ -1,7 +1,13 @@
 <?php
-
-include '././CONFIG/config.php';
+echo "asdfnj";
+// include '././CONFIG/config.php';
 // Check for empty fields
+$link = new mysqli('localhost','codewit2_BOGO','smileplz@1234','codewit2_BOGO');
+$link->set_charset("utf8");
+if(mysqli_connect_error()){
+   die("ERROR: UNABLE TO CONNECT: ".mysqli_connect_error());
+}
+
 if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
   http_response_code(500);
   exit();
